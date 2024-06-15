@@ -15,7 +15,8 @@ function sum() {
         sum += array[i];
     }
     console.log(sum);
-    
+    let text = document.getElementById("sum-text");
+    text.textContent =`= ${sum}`;
 }
 
 
