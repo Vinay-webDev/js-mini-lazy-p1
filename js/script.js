@@ -1,15 +1,22 @@
 // sum of an array 
-let sum = [];
+let array = [];
 
 function pushValue() {
     let value = document.getElementById("input").value;
     let number = Number(value);
-    sum.push(number);
-    console.log(sum);
-    console.log(typeof sum[0]);
+    array.push(number);
+    console.log(array);
+    console.log(typeof array[0]);
 }
 
-
+function sum() {
+    let sum = 0;
+    for ( let i = 0; i < array.length; i++ ) {
+        sum += array[i];
+    }
+    console.log(sum);
+    
+}
 
 
 
